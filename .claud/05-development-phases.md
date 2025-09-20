@@ -1,12 +1,29 @@
 # Development Phases
 
+## Phase 0: Initial Deployment (Days 1-3)
+
+**Goal:** Get basic homepage live with logo and DNS configured
+
+### Week 1: Foundation
+- Domain purchase and DNS setup
+- Choose tech stack (Next.js recommended)
+- Initialize project repository
+- Deploy basic homepage with logo
+- SSL/HTTPS configuration
+- Verify deployment pipeline works
+
+**Deliverable:** Live website at primary domain with W&U logo
+
+**See:** `.claud/02-initial-deployment.md` for complete Phase 0 details
+
+---
+
 ## Phase 1: MVP Core (Weeks 1-4)
 
 ### Week 1-2: Foundation
-- Project setup & architecture
-- Design system implementation (base components)
 - Authentication & user system
 - Database schema
+- Design system implementation (base components)
 - W&U personality quiz (initial assessment)
 
 ### Week 3-4: Core Features

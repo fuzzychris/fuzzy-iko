@@ -1,0 +1,10 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Transparent yin–yang inspired icon for favicon. No background rectangle; teal matches original tone. -->
+  <!-- Outer circle filled with orange -->
+  <circle cx="256" cy="256" r="256" fill="#E67E22" />
+  <!-- Teal swirl overlay -->
+  <path d="M256 0
+            A256 256 0 1 0 256 512
+            A128 128 0 1 1 256 256
+            A128 128 0 1 0 256 0 Z" fill="#2D7D7D"/>
+</svg>

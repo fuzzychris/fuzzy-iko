@@ -1,3 +1,4 @@
+cat > create-logo-prompts.sh << 'EOF'
 #!/bin/bash
 
 # Create directory
@@ -25,6 +26,12 @@ I need you to create a square app icon version of this logo. Requirements:
 - Keep the friendly, mascot style
 - Optimize for small sizes (must be recognizable at 16x16px)
 
+IMPORTANT: If the detailed mascot heads don't work at small sizes, provide abstract alternatives:
+- Simplified head silhouettes (just outlines, no facial features)
+- Geometric shapes representing wolf (angular/triangle) and unicorn (curved with horn)
+- Interlocking "W" and "U" letterforms in teal and orange
+- Abstract yin-yang style design with teal and orange
+
 Please provide a downloadable file named: logo-icon.png
 
 ---
@@ -43,6 +50,11 @@ Create a horizontal logo lockup combining the mascot heads with text. Requiremen
 - Align text vertically centered with the mascot heads
 - Ensure text is clearly legible
 - Background: transparent or white
+
+If the full mascot heads are too detailed for the height, consider:
+- Simplified head silhouettes
+- Just the head outlines without facial details
+- Abstract wolf/unicorn symbols with text
 
 Please provide a downloadable file named: logo-horizontal.png
 
@@ -80,6 +92,11 @@ Create a compact, vertically stacked logo. Requirements:
 - Minimal spacing between heads and text
 - Works well as a profile picture or small badge
 
+If the detailed heads don't work in compact format, consider:
+- Simplified silhouettes
+- Just ear/horn shapes with "W&U" text
+- Circular badge with abstract wolf/unicorn symbols
+
 Please provide a downloadable file named: logo-compact.png
 
 ---
@@ -98,6 +115,11 @@ Create a wide format logo optimized for website headers/navigation bars. Require
 - Text in friendly sans-serif, charcoal color (#2C3E50)
 - Transparent background
 - Scalable without losing legibility
+
+For nav bar heights under 80px, consider simplifying:
+- Remove fine details (horn stripes, fur lines, facial expressions)
+- Use simplified head outlines
+- Abstract shapes if mascots don't scale
 
 Please provide a downloadable file named: logo-wide.png
 
@@ -119,7 +141,41 @@ Create a social media banner/cover image featuring the logo. Requirements:
 - Professional but playful aesthetic
 
 Please provide a downloadable file named: logo-banner.png
+
+---
+
+## 7. Favicon (Multiple Sizes)
+
+**Filename: favicon.ico (or favicon.png for web)**
+
+Create a favicon optimized for 16x16px to 32x32px display. Requirements:
+
+At these tiny sizes, the detailed mascot heads will NOT work. Use abstract alternatives:
+
+OPTION 1 (Recommended): Yin-yang inspired design
+- Circular design with teal and orange in a balanced swirl/yin-yang pattern
+- Symbolizes the duality and spectrum concept
+- Instantly recognizable at tiny sizes
+
+OPTION 2: Geometric abstract
+- Simple shapes: angular triangle (wolf) + curved horn shape (unicorn)
+- Minimal, iconic representation
+
+OPTION 3: Lettermark
+- Stylized "W&U" or interlocking W and U
+- Use teal and orange colors
+
+OPTION 4: Split circle
+- Circle divided diagonally or vertically
+- Teal on one side, orange on the other
+
+Choose the option that works best at 16x16px. The design MUST be clearly visible and recognizable at favicon size.
+
+Please provide a downloadable file named: favicon.png
 PROMPTS
 
 echo "Created docs/logo-prompts/chatgpt-logo-variants.md"
 echo "All prompts saved successfully"
+EOF
+
+chmod +x create-logo-prompts.sh && ./create-logo-prompts.sh
